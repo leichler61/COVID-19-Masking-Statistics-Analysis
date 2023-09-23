@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2022-12-07">
+
+<title>Final Project Paper</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="Final Project Paper_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Final Project Paper_files/libs/quarto-html/quarto.js"></script>
+<script src="Final Project Paper_files/libs/quarto-html/popper.min.js"></script>
+<script src="Final Project Paper_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Final Project Paper_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Final Project Paper_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Final Project Paper_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Final Project Paper_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Final Project Paper_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Final Project Paper_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Final Project Paper</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lily Eichler, Steven Raanes, Sarah Kessler, Celeste Brinkhuis </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 7, 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="title-masking-in-classes-of-students-and-professors" class="level2">
+<h2 class="anchored" data-anchor-id="title-masking-in-classes-of-students-and-professors"><strong>Title:</strong> Masking in Classes of Students and Professors</h2>
+<p><strong>Introduction:</strong></p>
+<p>Fall 2022, the semester in which the data was collected, was the first semester since the beginning of the COVID-19 pandemic in which Vassar administration did not require masking by students or professors in classes. As a result, the decision as to whether to require masks was left to the discretion of professors, and in cases in which the professor chose not to require masks, the choice was left to the discretion of the students themselves. It was this second scenario that intrigued us the most. Interested in the relationship between a professor’s decision to mask in class and their students’ decisions to do so, through our survey, we sought to determine whether the proportion of students in classes who wore a mask during class periods is independent from a professor’s decision to wear a mask themselves in that class period.</p>
+<p><strong>Data:</strong></p>
+<p>This study is an observational study of Vassar students and professors across departments. After obtaining a random sample of 60 professor emails, we sent out an email to each professor asking them to complete a survey. The survey recorded the variables of class name, total class student population, number of students masking, type of class (lecture vs.&nbsp;discussion), and whether the professor masked in class. Over the course of two weeks, we collected 28 responses. Once we collected our data, it was altered for clarity and ease of analysis: extraneous variables such as class name and the timestamp of the survey’s completion were removed, numerical values that were presented as a range between two numbers were presented as the average between those numbers [2-3 as 2.5, etc], and class type was simplified to {Lecture, Discussion, Both, Other} where “Other” represented both language and laboratory periods. We also noted that five of the professors who responded required masks. We excluded these classes from our data as our research question focused on the students’ choices to mask based on professor masking, not as a requirement for the class.</p>
+<p>Our research question concerns an association between students choosing to mask and professors choosing to mask, but the way the survey was conducted gave us data about the proportion of students in specific classes that choose to mask as each observation in the data set represented a class. To get our data in a form more conducive to answering our research question, we reorganized the data set so that each observation represented a student. There were four types of students reported on in the survey: students who masked and whose professor masked, students who masked and whose professor did not mask, students who did not mask and whose professor masked, and students who did not mask and whose professor did not mask. Our survey contained the data for the number of students in each of these categories, so we were able to accurately turn the data we collected into data in which the observations were students. This allows us to both more directly engage with our question concerning individual students and alleviate problems like smaller classes being disproportionately important in the randomization process. We discuss consequences of our data collection method and potential changes we would make to our study in our discussion section.</p>
+<p>With our data organized this way, we observed 525 students, keeping track of their masking status and their professor’s masking status. In this reorganized data set, we did not include any other variables.</p>
+<p><strong>Methods:</strong></p>
+<p>The parameters of our study are the “true average proportion of students masking in classes in which the professor masks” and the “true average proportion of students masking in classes in which the professor does not mask.” We aim to determine the true difference between these proportions and thus independence or dependence between the two. We calculated the proportion of students who masked and whose professor masked and the proportion of students who masked and whose professor did not mask as our sample statistics.</p>
+<p>Graphically we decided to use a proportion based bar graph that shows the proportion of masking students whose professor does wear a mask and the proportion of masking students whose professor does not wear a mask. We also choose to represent our findings through various proportion tables which depict the different proportions of student and professor masking in different scenarios.</p>
+<p>For our inferential analysis, we used the proportion of students who masked in classes where their professor masked minus the proportion of students who masked in classes where their professor did not mask in our sample as our observed statistic. In order to conduct a hypothesis test, we established a null and alternative hypothesis which are as follows:</p>
+<p>Null hypothesis: The true difference in proportions of students who mask in class among classes where professors mask and among classes where the professor does not mask is 0.</p>
+<p>Alternative hypothesis: The true difference in proportions of students who mask in class among classes where professors mask and among classes where the professor does not mask is statistically significantly different than 0.</p>
+<p>As we are examining the relationship between two categorical variables, our inferential analysis consists of a simulation-based randomization test using permutation under the null hypothesis. This suits our research question well as our null hypothesis is that students choose to mask independently of their professor’s masking. We shuffled the values in the <code>prof_mask</code> column (YES and NO) using the generate() function in R with type set to “permute”, then split the shuffled data into two data sets, one consisting of the observations where the professor does mask and one where they do not mask. We then calculated the proportion of students who mask within each of those data sets, and the difference between these two proportions was recorded as the null sample statistic. This process was repeated 1000 times and these values were recorded as our null sampling distribution. A p-value was calculated using our observed sample statistic. We set our significance level at 0.05, meaning if the p-value is less than 0.05 we can reject the null.</p>
+<p>We decided not to use other tests, such as mathematical tests, because our data did not meet assumptions such as independence. When the observations were classes, each class was independent, but the students are not. The student observations within our reorganized data set are enrolled in classes together and thus are affected by the same professor.</p>
+<p>In addition, we calculated a 95% confidence interval of the true difference in the proportion of students masking in classes where the professor masks vs.&nbsp;classes where the professor does not mask using standard error.</p>
+<p><strong>Results - Exploratory Data Analysis:</strong></p>
+<p>The following graph shows the difference in proportions of students masking and not masking in classes in which the professor masks or does not mask.</p>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Final-Project-Paper_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Based on the graph, it appears that more students will mask in classes in which the professor masks and there exists a non-zero difference in the proportions we are examining.</p>
+<p>The following proportion tables show different proportions of student and professor masking in different circumstances.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<thead>
+<tr class="header">
+<th style="text-align: left;">prof_mask</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">prop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">NO</td>
+<td style="text-align: right;">365</td>
+<td style="text-align: right;">0.6952381</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">YES</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">0.3047619</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<thead>
+<tr class="header">
+<th style="text-align: left;">stu_mask</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">prop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">NO</td>
+<td style="text-align: right;">407</td>
+<td style="text-align: right;">0.7752381</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">YES</td>
+<td style="text-align: right;">118</td>
+<td style="text-align: right;">0.2247619</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<thead>
+<tr class="header">
+<th style="text-align: left;">prof_mask</th>
+<th style="text-align: left;">stu_mask</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">prop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">YES</td>
+<td style="text-align: left;">NO</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">0.65625</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">YES</td>
+<td style="text-align: left;">YES</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">0.34375</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<thead>
+<tr class="header">
+<th style="text-align: left;">prof_mask</th>
+<th style="text-align: left;">stu_mask</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">prop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">NO</td>
+<td style="text-align: left;">NO</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: right;">0.8273973</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NO</td>
+<td style="text-align: left;">YES</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">0.1726027</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<thead>
+<tr class="header">
+<th style="text-align: left;">prof_mask</th>
+<th style="text-align: left;">stu_mask</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">prop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">NO</td>
+<td style="text-align: left;">NO</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: right;">0.5752381</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NO</td>
+<td style="text-align: left;">YES</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">0.1200000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">YES</td>
+<td style="text-align: left;">NO</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">0.2000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">YES</td>
+<td style="text-align: left;">YES</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">0.1047619</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The highest proportion overall is of students who do not mask in classes where the professor does not mask, which is 0.5752381. Additionally, the proportion of number of students who mask and whose professor masks over the total number of students is 0.1047619, which is 0.0152381 less than the proportion of number of students who mask and whose professor does not mask over the total number of students, which is equal to 0.12. However, the proportion of students masking in classes in which the professor masks is 0.34375, and is 0.1711473 greater than the proportion of students masking in classes in which the professor does not mask, which is 0.1726027. This shows that overall, there are fewer students within our data set who mask when their professor masks (55) than students who mask when their professor does not mask (63), but this is skewed by the fact that more professors within the data set do not mask overall. When the proportions are analyzed individually by professor masking, it is clear that there is a positive difference between students who mask and whose professor masks and students who mask and whose professor does not mask.</p>
+<p>The graph shows us the difference between proportions, but does not show us that the number of both professors and students who mask overall is less than those who do not.</p>
+<p><strong>Results - Inferential Analysis:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Final-Project-Paper_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<thead>
+<tr class="header">
+<th style="text-align: right;">p_value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>From our collected data, we found that the difference in proportions of masking students based on whether or not their professor masked was around 0.17 in our sample. After running our randomization test in R and calculating a p-value of 0, we determined that a difference in proportions of 0.17 occuring under the null due to natural variability within the data is extremely unlikely. Each of our null sampling distributions appeared mostly normal, and our observed value was much larger than any sampling statistics calculated under the null distribution. As our p-value is less than our significance level of 0.05, we can reject the null hypothesis and claim that there is a statistically significant difference in the proportion of students who mask in classes where the professor masks and the proportion of students who mask in classes where the professor does not mask.</p>
+<p>Our 95% confidence interval of (0.09251, 0.24978) indicates that we are 95% confident that the true difference in proportions is between the value of 0.09251 and 0.24978. As 0 is not in our confidence interval, our hypothesis test and confidence interval agree that the difference in proportions is non-zero. Additionally, the confidence interval only contains positive values, indicating that there is a positive difference in proportions (in which the order is “YES” - “NO”) and there are more students who mask in classes where the professor masks than in classes where the professor does not mask.</p>
+<p><strong>Discussion:</strong></p>
+<p>Since we rejected the null hypothesis, we can claim statistical significance but not necessarily practical significance from our results. Our conclusion was that there is an association between a professor choosing to mask and the proportion of students choosing to mask within their class, and thus we have determined dependence. However, there are other factors and potential confounding variables that we did not address in our analysis, including type of class (Lecture, Discussion, or Other), date, and temperature, all of which might affect the number of students masking on a particular day. Additionally, we only had a sample size of 23 independent classes. Though that resulted in hundreds of student observations, these observations are not independent as these students were members of the same classes and affected by the same professors. Because of the lack of accounting for confounding variables and the sample size, we cannot claim actual practical significance of our data. If we could fix these issues by controlling for the confounding variables and conducting the data collection with a much larger sample size, our results would be practically significant, as the efficacy of COVID-19 and other illnesses could be diminished by increasing professor masking and thus increasing student masking.</p>
+<p>As we sent the survey to exactly 60 professors and received only 28 results (23 of which we were able to use in our analysis), there is a certain level of non-response bias within our results. There is not a clearly defined reason for the lack of responses and may have merely resulted from forgetfulness or a lack of time to answer the survey. Additionally, we failed to provide a disclaimer in the survey that assured the professors that the survey was anonymous and would not affect them, resulting in potential bias if professors were incentivized to provide false information.</p>
+<p>If we were to repeat the project, we would edit the survey to include a disclaimer about the anonymity of the survey and a question about masking requirements in classes. This way, the professors would have no incentive to provide false data and we would be able to exclude professors that require masks without further correspondence. We would also select a larger sample size to increase the accuracy of our data and mitigate non-response bias. Furthermore, we might consider reformatting the survey so that the observations are individual students instead of classes. We decided to send the survey to professors instead of students to mitigate false results from students who may not wish to expose whether or not they prefer to wear a mask and to ensure that the results were all from one specific class period, as people may choose to mask or not mask based on different factors on different days. This resulted in our original observations being classes, some of which would have had more of an effect on our analysis than others based solely on class size. There are a few consequences of this shift, however, including the loss of information on the individual proportions of student and professor masking in different types of classes and if there was a trend for higher proportions in specific classes.</p>
+<p>Future directions of research include examination of the effects of the confounding variables on proportion of student masking in classes and of the effects of these variables together, including professor masking. However, there exists a large number of confounding variables, including the variables of time and location, which are difficult to manage and account for. In the future, we would need to ensure that all of the data was collected on the same day, and we would not be able to generalize for other locations outside of Vassar College.</p>
+<p><strong>Conclusion:</strong></p>
+<p>Our data showed a statistically significant difference in rates of students masking based on whether or not professors masked, though we cannot assume practical significance. There are innumerable factors that affect masking in classes by both students and professors, as the pandemic and personal preference continually shift over time. Overall, the complexity of data on the COVID-19 pandemic is a more important conclusion than the actual inferential analysis from our data. Even if we had accounted for all of our confounding variables and minimized bias, we would have to account for our own bias and attempt to frame the data and subsequent analysis in a neutral manner, which many newspapers and other media sources do not. Critical analysis of data is vital for both researchers and those who aim to understand the data they are presented with.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

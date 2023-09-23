@@ -1,0 +1,16 @@
+---
+title: "Final Project Analysis Plan"
+author: "Replace this with your Section Number and Group Number, and Group Members names"
+date: "Fall 2022"
+output: pdf_document
+---
+
+<!-- SAVE this document as analysisPlan[sectionNumber_groupNumber].Rmd, e.g. for Section 2 Group 4, "analysisPlan0204.Rmd" and submit the compiled pdf file to Moodle -->
+
+<!-- Read the More Details section on the Final Project Assignment sheet for what to include in the anaylsis plan. -->
+
+### Graphical Analysis
+<!-- What graphs will you create to explore your data? -->
+
+### Inferential Analysis
+<!-- What inferential analysis will you conduct? What are your hypotheses?  one-sided or two-sided?  What statistical significance level (for hypothesis tests) or confidence level (for confidence levels) will you use?  What methods will you use?  -->

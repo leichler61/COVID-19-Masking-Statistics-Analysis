@@ -1,0 +1,81 @@
+---
+title: "Masking Analysis"
+format: html
+authors: "Lily Eichler, Steven Raanes, Sarah Kessler, Celeste Brinkhuis"
+date: "December 7, 2022"
+editor: visual
+---
+
+```{r}
+# Loading the necessary packages
+
+library(tidyverse)
+library(infer)
+library(openintro)
+library(skimr)
+```
+
+```{r}
+# Reading in the data
+
+mask <- read.csv("Final Data.csv")
+```
+
+```{r}
+# Exploratory Data Analysis - bar graph
+
+ggplot(mask, aes(x = prof_mask, fill = stu_mask)) + geom_bar(position = "fill") + labs(title = "Professor Masking vs. Student Masking", x = "Professor Masking", y = "Proportion", fill = "Student Masking") + theme_minimal() + scale_fill_viridis_d(na.value = "grey50")
+```
+
+```{r}
+# Calculating proportion tables
+
+mask %>%
+  count(prof_mask) %>%
+  mutate(prop = prop.table(n)) %>%
+  knitr::kable()
+
+mask %>%
+  count(stu_mask) %>%
+  mutate(prop = prop.table(n)) %>%
+  knitr::kable()
+
+mask %>%
+  filter(prof_mask == "YES") %>%
+  count(prof_mask, stu_mask) %>%
+  mutate(prop = prop.table(n)) %>%
+  knitr::kable()
+
+ mask %>%
+  filter(prof_mask == "NO") %>%
+  count(prof_mask, stu_mask) %>%
+  mutate(prop = prop.table(n)) %>%
+   knitr::kable()
+```
+
+```{r}
+# Calculating the observed statistic, null distribution, and p-value
+
+p_hat <- mask %>% 
+  specify(stu_mask ~ prof_mask, success = "YES") %>%
+  calculate(stat = "diff in props", order = c("YES", "NO"))
+
+null_dist <- mask %>%
+  specify(stu_mask ~ prof_mask, success = "YES") %>%
+  hypothesize(null = "independence") %>% 
+  generate(reps = 1000, type = "permute") %>% 
+  calculate(stat = "diff in props", order = c("YES", "NO"))
+
+visualize(null_dist) +
+  shade_p_value(obs_stat = p_hat, direction = "two-sided") + labs(x = "Sample Statistic", y = "Count")
+
+null_dist %>%
+  get_p_value(obs_stat = p_hat, direction = "two-sided")
+```
+
+```{r}
+# Calculating the confidence interval
+
+null_dist %>% 
+get_ci(type = "se", point_estimate = p_hat)
+```
